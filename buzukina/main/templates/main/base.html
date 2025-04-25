@@ -1,0 +1,77 @@
+{% load static %}  
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+
+		<link type="text/css" href="{% static 'main/css/null.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/header.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/header_mobile.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/main.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/main_mobile.css' %}" rel="stylesheet" /> 
+		<link type="text/css" href="{% static 'main/css/form.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/slider.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/politic.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/mail_done.css' %}" rel="stylesheet" /> 
+        <link type="text/css" href="{% static 'main/css/booking.css' %}" rel="stylesheet" /> 
+
+        
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="wrapper">
+			{% block header %}
+			<header class="header">
+                <a href="http://www.buzukina.by" class="header_logotip">
+
+                    <img src="{% static 'main/img/LogoStart.svg' %}" alt="logotip">
+                    <p>BuzukI&A</p>
+                    <img src="{% static 'main/img/LogoEnd.svg' %}" alt="logotip">
+
+                </a>
+
+                <a href="tel: +375296843025" class="header__tel">+ 375 29 684 30 25</a>
+                
+                <nav class="header__menu"> 
+                    <ul class="header__list">
+                        <li><a href="{{main}}" class="header__link" id="headerIdMain">Главная</a></li>
+                        <li><a href="{{services_list}}" class="header__link" id="headerIdContacts">Услуг</a></li>
+                        <li><a href="{{houses_list}}" class="header__link" id="headerIdPrice">Цены</a></li>
+                        <li><a href="{{booking}}" class="header__link" id="headerIdGalery">Бронь</a></li>
+                        <li><a href="{{feedback}}" class="header__link" id="headerIdGalery">Отзывы</a></li>
+                        <li><a href="{{feedback}}" class="header__link" id="headerIdGalery">Контакты</a></li>
+                    </ul>
+                </nav> 
+
+
+                <div class="header__burger"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <a href="tel: +375296843025" class="header__phone"><img src="{% static 'main/img/header_mobile_tel.svg' %}" alt="телефон"></a>
+
+            </header>
+			{% endblock header %}
+
+			
+			{% block main %}
+		
+			{% endblock main %}
+
+
+
+            <script src="{% static 'main/js/burger.js' %}"></script>   
+            
+            <script src="{% static 'main/js/scroll.js' %}"></script>   
+             
+            
+		</div>	
+	</body>
+</html>

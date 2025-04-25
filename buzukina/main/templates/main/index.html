@@ -1,0 +1,599 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<main class="main" id="main">
+
+    <section class="about_us">
+        <div class="main_information">
+            <h2>Агроусадьба</h2>
+            <h1>БузукИнА</h1>
+            <p>
+                Могилевская область, Шкловский район,
+                <br>деревня Троица, ул. Центральная, д. 7
+                <br>Республика Беларусь
+            </p>
+
+            <div class="main_maps">
+                <a href="https://www.google.com/maps/search/%D0%B0%D0%B3%D1%80%D0%BE%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0+%D0%B1%D1%83%D0%B7%D1%83%D0%BA%D0%B8%D0%BD%D0%B0/@54.274533,30.099533,17z/data=!3m1!4b1?entry=ttu" target="_blank">* Google Maps</a>
+                <a href="https://yandex.by/profile/155472542084?no-distribution=1&view-state=mini&source=wizbiz_new_map_single" target="_blank">* Яндекс Карты</a>
+            </div>
+
+            <p>
+                <span class="no_wrap">(209 км от Минска,</span>
+                <span class="no_wrap">172 км от Смоленска,</span> 
+                <span class="no_wrap">55 км от Могилева,</span> 
+                <span class="no_wrap">18 км от Шклова,</span> 
+                <span class="no_wrap">40 км от Орши,</span> 
+                <span class="no_wrap">28 км от Круглого)</span> 
+            </p>
+
+            <div class="main_services">
+                <img src="{% static 'main/img/LogoStart.svg' %}" alt="">
+                
+                <p>Коттеджи, баня, фурако в аренду на сутки  в экологически 
+                чистом месте среди деревьев на берегу реки для хорошего 
+                загородного отдыха со всеми удобствами по доступным ценам.
+                </p>
+            </div>
+
+            <p>
+                (осуществляем трансфер группами <span class="no_wrap">до 6 человек)</span>
+            </p>
+
+            <a href="tel: +375296843025" class="main__tel">+ 375 29 684 30 25</a>
+
+            <div class="main_social_networks">
+                <a href="https://www.instagram.com/agrousadba_buzukina/" class="svg-container">
+                    <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="none"/>
+                        <path d="M20 11.8072C22.6506 11.8072 23.0121 11.8072 24.0964 11.8072C25.0602 11.8072 25.5422 12.0482 25.9036 12.1687C26.3855 12.4096 26.747 12.5301 27.1084 12.8916C27.4699 13.253 27.7108 13.6145 27.8313 14.0964C27.9518 14.4578 28.0723 14.9398 28.1928 15.9036C28.1928 16.988 28.1928 17.2289 28.1928 20C28.1928 22.7711 28.1928 23.0121 28.1928 24.0964C28.1928 25.0602 27.9518 25.5422 27.8313 25.9036C27.5904 26.3855 27.4699 26.747 27.1084 27.1084C26.747 27.4699 26.3855 27.7108 25.9036 27.8313C25.5422 27.9518 25.0602 28.0723 24.0964 28.1928C23.0121 28.1928 22.7711 28.1928 20 28.1928C17.2289 28.1928 16.988 28.1928 15.9036 28.1928C14.9398 28.1928 14.4578 27.9518 14.0964 27.8313C13.6145 27.5904 13.253 27.4699 12.8916 27.1084C12.5301 26.747 12.2892 26.3855 12.1687 25.9036C12.0482 25.5422 11.9277 25.0602 11.8072 24.0964C11.8072 23.0121 11.8072 22.7711 11.8072 20C11.8072 17.2289 11.8072 16.988 11.8072 15.9036C11.8072 14.9398 12.0482 14.4578 12.1687 14.0964C12.4096 13.6145 12.5301 13.253 12.8916 12.8916C13.253 12.5301 13.6145 12.2892 14.0964 12.1687C14.4578 12.0482 14.9398 11.9277 15.9036 11.8072C16.988 11.8072 17.3494 11.8072 20 11.8072ZM20 10C17.2289 10 16.988 10 15.9036 10C14.8193 10 14.0964 10.241 13.494 10.4819C12.8916 10.7229 12.2892 11.0843 11.6867 11.6867C11.0843 12.2892 10.8434 12.7711 10.4819 13.494C10.241 14.0964 10.1205 14.8193 10 15.9036C10 16.988 10 17.3494 10 20C10 22.7711 10 23.0121 10 24.0964C10 25.1807 10.241 25.9036 10.4819 26.506C10.7229 27.1084 11.0843 27.7108 11.6867 28.3133C12.2892 28.9157 12.7711 29.1566 13.494 29.5181C14.0964 29.759 14.8193 29.8795 15.9036 30C16.988 30 17.3494 30 20 30C22.6506 30 23.0121 30 24.0964 30C25.1807 30 25.9036 29.759 26.506 29.5181C27.1084 29.2771 27.7108 28.9157 28.3133 28.3133C28.9157 27.7108 29.1566 27.2289 29.5181 26.506C29.759 25.9036 29.8795 25.1807 30 24.0964C30 23.0121 30 22.6506 30 20C30 17.3494 30 16.988 30 15.9036C30 14.8193 29.759 14.0964 29.5181 13.494C29.2771 12.8916 28.9157 12.2892 28.3133 11.6867C27.7108 11.0843 27.2289 10.8434 26.506 10.4819C25.9036 10.241 25.1807 10.1205 24.0964 10C23.0121 10 22.7711 10 20 10Z" fill="white"/>
+                        <path d="M20 14.8193C17.1084 14.8193 14.8193 17.1084 14.8193 20C14.8193 22.8916 17.1084 25.1807 20 25.1807C22.8916 25.1807 25.1807 22.8916 25.1807 20C25.1807 17.1084 22.8916 14.8193 20 14.8193ZM20 23.3735C18.1928 23.3735 16.6265 21.9277 16.6265 20C16.6265 18.1928 18.0723 16.6265 20 16.6265C21.8072 16.6265 23.3735 18.0723 23.3735 20C23.3735 21.8072 21.8072 23.3735 20 23.3735Z" fill="white"/>
+                        <path d="M25.3012 15.9036C25.9666 15.9036 26.506 15.3642 26.506 14.6988C26.506 14.0334 25.9666 13.494 25.3012 13.494C24.6358 13.494 24.0964 14.0334 24.0964 14.6988C24.0964 15.3642 24.6358 15.9036 25.3012 15.9036Z" fill="white"/>
+                    </svg>
+                </a>
+
+                <a href="https://vk.com/public214121048" class="svg-container">
+                    <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="none"/>
+                        <rect width="40" height="40" rx="20" fill="black"/>
+                        <path d="M20.9825 27C13.466 27 9.17864 21.7447 9 13H12.7651C12.8888 19.4184 15.6646 22.1371 17.8632 22.6977V13H21.4085V18.5355C23.5796 18.2973 25.8607 15.7748 26.6302 13H30.1755C29.8855 14.4391 29.3075 15.8017 28.4776 17.0025C27.6477 18.2033 26.5837 19.2166 25.3523 19.979C26.7269 20.6756 27.941 21.6615 28.9145 22.8717C29.888 24.082 30.5988 25.489 31 27H27.0974C26.7373 25.6876 26.0054 24.5128 24.9934 23.6228C23.9814 22.7328 22.7343 22.1673 21.4085 21.997V27H20.9825Z" fill="white"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.tiktok.com/@usadba_buzukina?_t=8hla8j0CoPl&_r=1" class="svg-container">
+                    <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="none"/>
+                        <path d="M29.9762 14.0396C28.5829 14.0395 27.2467 13.4943 26.2615 12.5239C25.2763 11.5534 24.7228 10.2373 24.7229 8.86487H20.9695V23.3416C20.9688 24.0016 20.7572 24.6447 20.3648 25.1796C19.9723 25.7146 19.4188 26.1143 18.7828 26.3222C18.1468 26.53 17.4605 26.5354 16.8212 26.3376C16.182 26.1398 15.6221 25.7488 15.221 25.2201C14.8199 24.6913 14.5979 24.0517 14.5865 23.3917C14.5751 22.7318 14.7749 22.0851 15.1575 21.5432C15.5401 21.0014 16.0862 20.5919 16.7183 20.3728C17.3504 20.1537 18.0364 20.1361 18.6792 20.3225V16.7287C17.3132 16.5473 15.9234 16.7806 14.6955 17.3977C13.4677 18.0147 12.4601 18.986 11.8074 20.1819C11.1548 21.3778 10.888 22.7414 11.0429 24.0906C11.1977 25.4397 11.7667 26.7102 12.6739 27.7325C13.5811 28.7547 14.7834 29.48 16.1201 29.8115C17.4568 30.143 18.8644 30.065 20.1549 29.5877C21.4454 29.1105 22.5574 28.2569 23.3424 27.1408C24.1273 26.0247 24.5479 24.6993 24.548 23.3416L24.6575 16.0241C26.1997 17.1392 28.0635 17.7391 29.9766 17.7363L29.9762 14.0396Z" fill="white"/>                                    
+                    </svg>
+                </a>
+
+                <a href="https://t.me/agrousadba_buzukina" class="svg-container">
+                    <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="black"/>
+                        <path d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z" fill="white"/>
+                    </svg>
+                </a>    
+            </div>
+        </div>
+
+        <div class="main_img">
+            {% if title_image %}
+                <img src="{{ title_image.image.url }}" alt="{{ title_image.title }}">
+            {% else %}
+                <p>Изображений нет</p>
+            {% endif %}
+        </div>
+        
+
+    </section>
+
+    <section class="services_list" id="services_list">
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/cottage.svg' %}" alt="cottage">
+            <p>Двухэтажный</p>
+            <p>коттедж</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/A-frame.svg' %}" alt="A-frame">
+            <p>Коттедж</p>
+            <p>A-frame</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/barnhouse.svg' %}" alt="barnhouse">
+            <p>Коттедж</p>
+            <p>барнхаус</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/sauna.svg' %}" alt="sauna">
+            <p>Баня</p>
+            <p>на дровах</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/furako.svg' %} " alt="furako">
+            <p>Купель-</p>
+            <p>фурако</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/hookah.svg' %} " alt="hookah">
+            <p>Мангал,</p>
+            <p>кальян,</p>
+            <p>караоке</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/lake.svg' %} " alt="lake">
+            <p>Зона на берегу</p>
+            <p>реки</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/forest.svg' %} " alt="forest">
+            <p>Просторная</p>
+            <p>территория</p>
+        </div>
+
+        <div class="services_list_block">
+            <img src="{% static 'main/img/services list/boat.svg' %} " alt="boat">
+            <p>Моторная</p>
+            <p>лодка, рыбная</p>
+            <p>ловля</p>
+        </div>
+    </section>
+
+    <section class="slogan">
+        <h3>“Наши цены весьма демократичны,
+            <span class="no_wrap">а уровень сервиса</span>
+             <span class="no_wrap">не уступает дорогим виллам.</span>
+        </h3>
+
+        <h3>
+            <span class="no_wrap">Все, что мы делаем,</span>  
+            <span class="no_wrap">мы делаем с любовью.”</span>                    
+        </h3>
+
+    </section>
+
+    <section class="house_rules">
+        <h3>Основные правила проживания и оказания услуг:</h3>
+
+        <div class="list_of_rules">
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/child.svg' %}" alt="child">
+                <p class="rule">можно с детьми любого возраста</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/dog.svg' %} " alt="dog">
+                <p class="rule">с животными - по согласованию</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/no_smoking.svg' %} " alt="no_smoking">
+                <p class="rule">курение разрешено только на улице</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/food.svg' %} " alt="food">
+                <p class="rule">услуги питания не оказываются</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/green.svg' %} " alt="green">
+                <p class="rule">зеленая зона доступна для всех</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/guitar.svg' %} " alt="guitar">
+                <p class="rule">громко шуметь можно до 23:00 
+                    <br>(громкая музыка на улице запрещена)
+                </p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/hands.svg' %} " alt="hands">
+                <p class="rule">работаем по задатку в размере не менее 50%</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/stop.svg' %} " alt="stop">
+                <p class="rule">
+                    При отмене бронирования менее
+                    <br>чем за 7 дней - задаток
+                    <br>не возвращается
+                </p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/rules icon/money.svg' %} " alt="money">
+                <p class="rule">способы оплаты указаны на сайте</p>
+            </div>
+
+        </div>
+
+        <div class="contract">
+            {% if document %}
+                <a href="{{ document.file.url }}" download> * публичный договор</a>
+            {% endif %}
+            <a href="{% url 'politic' %}">* политика конфиденциальности</a>
+        </div>
+    </section>
+
+    <section class="house_rules amenities">
+        <h3>Основные удобства:</h3>
+
+        <div class="list_of_rules">
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/wifi.svg' %} " alt="wifi">
+                <p class="rule">беспроводной интернет Wi-fi</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/water.svg' %} " alt="water">
+                <p class="rule">горячая вода</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/bedding.svg' %} " alt="bedding">
+                <p class="rule">постельное белье и полотенца</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/kitchen.svg' %} " alt="kitchen">
+                <p class="rule"> индукционная плита, микроволновка, электрический чайник    </p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/fork.svg' %} " alt="fork">
+                <p class="rule">кухонные принадлежности</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/conditioner.svg' %} " alt="conditioner">
+                <p class="rule">кондиционер (холод, тепло)</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/TV.svg' %} " alt="TV">
+                <p class="rule">телевизор</p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/fireplace.svg' %} " alt="fireplace">
+                <p class="rule"> камин       </p>
+            </div>
+
+            <div class="rule_block">
+                <img class="rule_icon" src="{% static 'main/img/facilities/grill.svg' %} " alt="grill">
+                <p class="rule">мангалы, барбекю</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slogan" >
+        <h3>Нашим гостям мы рады предложить:</h3>
+    </section>
+
+    <section class="houses" id="houses">
+        {% for house in houses %}
+        <div class="house_conteiner">
+
+            <div class="house_title">
+                <h2>{{ house.name }}</h2>
+                <div id="slider-container">
+
+                    {% if house.photos %}
+                    <div class="slider" id="slider">
+                        {% for photo in house.photos.all %}
+                            <div class="slide"><img src="{{ photo.photo.url }}" alt="{{ house.name }}"></div>
+                        {% endfor %}
+                    </div>
+                  
+                    <div class="pagination" id="pagination"></div>
+                    {% endif %}
+                </div>
+
+            </div>
+
+            <div class="house_description">
+                <h3>Описание</h3>
+
+                <div class="house_parameters">
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Вместимость:</div>
+                        <div class="parameter"> {{ house.capacity }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Кол-во этажей:</div>
+                        <div class="parameter"> {{ house.floors }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Спальных комнат:</div>
+                        <div class="parameter"> {{ house.rooms }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Кухня:</div>
+                        <div class="parameter"> {{ house.kitchen  }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Санузел:</div>
+                        <div class="parameter"> {{ house.toilet }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Горячая вода:</div>
+                        <div class="parameter"> {{ house.hot_water }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Кондиционер:</div>
+                        <div class="parameter"> {{ house.air_conditioner }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Камин:</div>
+                        <div class="parameter"> {{ house.fireplace }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Wi-fi:</div>
+                        <div class="parameter"> {{ house.wifi }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Бытовая техника:</div>
+                        <div class="parameter"> {{ house.appliances }}</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter_title">Дополнительная информация:</div>
+                    </div>
+
+                    <div class="one_parameter_conteiner">
+                        <div class="parameter dop_parameter"> 
+                            {{ house.additional_info }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="house_cost">
+                <h3> Стоимость</h3>
+
+                <div class="house_capacity">
+
+                    <div class="house_capacity_parameters"> 
+                        <p class="human_capacity">до 5-ти человек</p>
+                        <div class="weekday_and_price">
+                            <p class="weekday">понедельник - четверг:</p>
+                            <p class="price cost">{{ house.weekday_price }}</p>
+                        </div>
+                        <div class="weekday_and_price">
+                            <p class="weekday">пятн.-воскр., праздники: </p>
+                            <p class="price cost">{{ house.weekend_price }}</p>
+                        </div>
+                    </div>
+
+                    <div class="house_capacity_parameters"> 
+                        <p class="human_capacity">до 3-ех лет</p>
+                        <div class="weekday_and_price">
+                            <p class="price">{{ house.children }}</p>
+                        </div>
+                    </div>
+
+                    <div class="house_capacity_parameters"> 
+                        <p class="human_capacity">{{ house.max_people }}</p>
+                        <div class="weekday_and_price">
+                            <p class="price">{{ house.group_size }}</p>
+                        </div>
+                    </div>
+
+                    <div class="house_capacity_parameters"> 
+                        <p class="human_capacity">Проживание с животными</p>
+                        <div class="weekday_and_price">
+                            <p class="price">{{ house.pets }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="working_hours">
+                    <div id="check-in">
+                        <p>ЗАЕЗД:</p>
+                        <p>{{ house.check_in }}</p>
+                    </div>
+
+                    <div id="check-out">
+                        <p>ВЫЕЗД:</p>
+                        <p>{{ house.check_out }}</p>
+                    </div>
+                </div>
+
+                <a href="{% url 'booking' %}" class="button_book">ЗАБРОНИРОВАТЬ</a>
+
+                <a href="{{main}}" class="more_foto">* больше фото в наших соц.сетях</a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <section class="slogan">
+        <h3>Дополнительные услуги:</h3>
+    </section>
+
+    <section class="addition_services">
+
+        {% for service in additional_services %}
+            <div class="addition_service">
+                <h2>{{ service.name }}</h2>
+                <img src="{{ service.image.url }} " alt="{{ service.name }}">
+                <h3>Описание</h3>
+                <p class="addition_description">
+                    {{ service.description }}
+                </p>
+                <h3>Стоимость</h3>
+                <p>{{ service.capacity }} </p>
+                <p>{{ service.duration }}</p>
+                <p class="cost">{{ service.cost }}</p>
+            </div>
+        {% endfor %}
+    </section>
+
+    <section class="slogan">
+        <h3>Отзывы о нас</h3>
+    </section>
+
+    <section class="reviews">
+
+        {% for review in reviews %}
+        <div class="review_conteiner">
+            <div class="review_main">
+                <div class="review_person">
+                    <img class="review_person_img" src="{{ review.photo.url }}" alt="">
+                    <p class="review_person_name">{{ review.name }}</p>
+                    <div class="review_stars">
+                        <img src="{% static 'main/img/reviews/stars.png' %}" alt="star">
+                        <img src="{% static 'main/img/reviews/stars.png' %}" alt="star">
+                        <img src="{% static 'main/img/reviews/stars.png' %}" alt="star">
+                        <img src="{% static 'main/img/reviews/stars.png' %}" alt="star">
+                        <img src="{% static 'main/img/reviews/stars.png' %}" alt="star">
+                    </div>
+                </div>
+
+                <div class="review_text">
+                    <p>
+                        {{ review.feedback }}
+                    </p>
+                </div>
+
+            </div>
+            
+            {% if review.source == 'yandex' %}
+                <a target="_blank" href="https://yandex.by/profile/155472542084">Ссылка на отзыв на Yandex.by</a>
+            {% elif review.source == 'google' %}
+                <a target="_blank" href="https://www.google.com/maps/place/%D0%90%D0%B3%D1%80%D0%BE%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0+%D0%91%D1%83%D0%B7%D1%83%D0%BA%D0%98%D0%BD%D0%90/@54.2745299,30.1021079,17z/data=!4m18!1m9!3m8!1s0x46d0117a1c3c6d7b:0xed13091d5e5c7ccb!2z0JDQs9GA0L7Rg9GB0LDQtNGM0LHQsCDQkdGD0LfRg9C60JjQvdCQ!8m2!3d54.2745299!4d30.1021079!9m1!1b1!16s%2Fg%2F11k9jrf2h1!3m7!1s0x46d0117a1c3c6d7b:0xed13091d5e5c7ccb!8m2!3d54.2745299!4d30.1021079!9m1!1b1!16s%2Fg%2F11k9jrf2h1?entry=ttu">Ссылка на отзыв на Google</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+        <div class="review_block_link">
+            <a target="_blank" href="https://yandex.by/profile/155472542084" class="review_link">посмотреть больше отзывов на Yandex.ru </a>
+            <a target="_blank" href="https://www.google.com/maps/place/%D0%90%D0%B3%D1%80%D0%BE%D1%83%D1%81%D0%B0%D0%B4%D1%8C%D0%B1%D0%B0+%D0%91%D1%83%D0%B7%D1%83%D0%BA%D0%98%D0%BD%D0%90/@54.2745299,30.1021079,17z/data=!4m18!1m9!3m8!1s0x46d0117a1c3c6d7b:0xed13091d5e5c7ccb!2z0JDQs9GA0L7Rg9GB0LDQtNGM0LHQsCDQkdGD0LfRg9C60JjQvdCQ!8m2!3d54.2745299!4d30.1021079!9m1!1b1!16s%2Fg%2F11k9jrf2h1!3m7!1s0x46d0117a1c3c6d7b:0xed13091d5e5c7ccb!8m2!3d54.2745299!4d30.1021079!9m1!1b1!16s%2Fg%2F11k9jrf2h1?entry=ttu" class="review_link">посмотреть больше отзывов на Google.com </a>    
+        </div>
+
+    </section>
+
+    <section class="feedback" id="feedback">
+        <img src="{% static 'main/img/photo_2023.jpg' %} " alt="">
+        <div class="feedback_conteiner">
+
+            <div class="feedback_contack">
+                <h4>Агроусадьба</h4>
+                <h4>"БузукИнА"</h4>
+                <p class="feedback_deviz">Мы работаем для Вас!</p>
+                <p class="feedback_working_hours">c 06:00 до 24:00</p>
+                <a href="http://www.buzukina.by" class="feedback_working_link">buzukina.by</a>
+                <p class="feedback_text">Могилевская область, Шкловский район,
+                    деревня Троица, ул. Центральная, д. 7
+                    Республика Беларусь
+                </p>
+                <a href="tel: +375296843025" class="feedback_tel">+ 375 29 684 30 25</a>
+
+                <div class="main_social_networks">
+                    <a href="https://www.instagram.com/agrousadba_buzukina/" class="svg-container">
+                        <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="none"/>
+                            <path d="M20 11.8072C22.6506 11.8072 23.0121 11.8072 24.0964 11.8072C25.0602 11.8072 25.5422 12.0482 25.9036 12.1687C26.3855 12.4096 26.747 12.5301 27.1084 12.8916C27.4699 13.253 27.7108 13.6145 27.8313 14.0964C27.9518 14.4578 28.0723 14.9398 28.1928 15.9036C28.1928 16.988 28.1928 17.2289 28.1928 20C28.1928 22.7711 28.1928 23.0121 28.1928 24.0964C28.1928 25.0602 27.9518 25.5422 27.8313 25.9036C27.5904 26.3855 27.4699 26.747 27.1084 27.1084C26.747 27.4699 26.3855 27.7108 25.9036 27.8313C25.5422 27.9518 25.0602 28.0723 24.0964 28.1928C23.0121 28.1928 22.7711 28.1928 20 28.1928C17.2289 28.1928 16.988 28.1928 15.9036 28.1928C14.9398 28.1928 14.4578 27.9518 14.0964 27.8313C13.6145 27.5904 13.253 27.4699 12.8916 27.1084C12.5301 26.747 12.2892 26.3855 12.1687 25.9036C12.0482 25.5422 11.9277 25.0602 11.8072 24.0964C11.8072 23.0121 11.8072 22.7711 11.8072 20C11.8072 17.2289 11.8072 16.988 11.8072 15.9036C11.8072 14.9398 12.0482 14.4578 12.1687 14.0964C12.4096 13.6145 12.5301 13.253 12.8916 12.8916C13.253 12.5301 13.6145 12.2892 14.0964 12.1687C14.4578 12.0482 14.9398 11.9277 15.9036 11.8072C16.988 11.8072 17.3494 11.8072 20 11.8072ZM20 10C17.2289 10 16.988 10 15.9036 10C14.8193 10 14.0964 10.241 13.494 10.4819C12.8916 10.7229 12.2892 11.0843 11.6867 11.6867C11.0843 12.2892 10.8434 12.7711 10.4819 13.494C10.241 14.0964 10.1205 14.8193 10 15.9036C10 16.988 10 17.3494 10 20C10 22.7711 10 23.0121 10 24.0964C10 25.1807 10.241 25.9036 10.4819 26.506C10.7229 27.1084 11.0843 27.7108 11.6867 28.3133C12.2892 28.9157 12.7711 29.1566 13.494 29.5181C14.0964 29.759 14.8193 29.8795 15.9036 30C16.988 30 17.3494 30 20 30C22.6506 30 23.0121 30 24.0964 30C25.1807 30 25.9036 29.759 26.506 29.5181C27.1084 29.2771 27.7108 28.9157 28.3133 28.3133C28.9157 27.7108 29.1566 27.2289 29.5181 26.506C29.759 25.9036 29.8795 25.1807 30 24.0964C30 23.0121 30 22.6506 30 20C30 17.3494 30 16.988 30 15.9036C30 14.8193 29.759 14.0964 29.5181 13.494C29.2771 12.8916 28.9157 12.2892 28.3133 11.6867C27.7108 11.0843 27.2289 10.8434 26.506 10.4819C25.9036 10.241 25.1807 10.1205 24.0964 10C23.0121 10 22.7711 10 20 10Z" fill="white"/>
+                            <path d="M20 14.8193C17.1084 14.8193 14.8193 17.1084 14.8193 20C14.8193 22.8916 17.1084 25.1807 20 25.1807C22.8916 25.1807 25.1807 22.8916 25.1807 20C25.1807 17.1084 22.8916 14.8193 20 14.8193ZM20 23.3735C18.1928 23.3735 16.6265 21.9277 16.6265 20C16.6265 18.1928 18.0723 16.6265 20 16.6265C21.8072 16.6265 23.3735 18.0723 23.3735 20C23.3735 21.8072 21.8072 23.3735 20 23.3735Z" fill="white"/>
+                            <path d="M25.3012 15.9036C25.9666 15.9036 26.506 15.3642 26.506 14.6988C26.506 14.0334 25.9666 13.494 25.3012 13.494C24.6358 13.494 24.0964 14.0334 24.0964 14.6988C24.0964 15.3642 24.6358 15.9036 25.3012 15.9036Z" fill="white"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://vk.com/public214121048" class="svg-container">
+                        <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="none"/>
+                            <rect width="40" height="40" rx="20" fill="black"/>
+                            <path d="M20.9825 27C13.466 27 9.17864 21.7447 9 13H12.7651C12.8888 19.4184 15.6646 22.1371 17.8632 22.6977V13H21.4085V18.5355C23.5796 18.2973 25.8607 15.7748 26.6302 13H30.1755C29.8855 14.4391 29.3075 15.8017 28.4776 17.0025C27.6477 18.2033 26.5837 19.2166 25.3523 19.979C26.7269 20.6756 27.941 21.6615 28.9145 22.8717C29.888 24.082 30.5988 25.489 31 27H27.0974C26.7373 25.6876 26.0054 24.5128 24.9934 23.6228C23.9814 22.7328 22.7343 22.1673 21.4085 21.997V27H20.9825Z" fill="white"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@usadba_buzukina?_t=8hla8j0CoPl&_r=1" class="svg-container">
+                        <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="none"/>
+                            <path d="M29.9762 14.0396C28.5829 14.0395 27.2467 13.4943 26.2615 12.5239C25.2763 11.5534 24.7228 10.2373 24.7229 8.86487H20.9695V23.3416C20.9688 24.0016 20.7572 24.6447 20.3648 25.1796C19.9723 25.7146 19.4188 26.1143 18.7828 26.3222C18.1468 26.53 17.4605 26.5354 16.8212 26.3376C16.182 26.1398 15.6221 25.7488 15.221 25.2201C14.8199 24.6913 14.5979 24.0517 14.5865 23.3917C14.5751 22.7318 14.7749 22.0851 15.1575 21.5432C15.5401 21.0014 16.0862 20.5919 16.7183 20.3728C17.3504 20.1537 18.0364 20.1361 18.6792 20.3225V16.7287C17.3132 16.5473 15.9234 16.7806 14.6955 17.3977C13.4677 18.0147 12.4601 18.986 11.8074 20.1819C11.1548 21.3778 10.888 22.7414 11.0429 24.0906C11.1977 25.4397 11.7667 26.7102 12.6739 27.7325C13.5811 28.7547 14.7834 29.48 16.1201 29.8115C17.4568 30.143 18.8644 30.065 20.1549 29.5877C21.4454 29.1105 22.5574 28.2569 23.3424 27.1408C24.1273 26.0247 24.5479 24.6993 24.548 23.3416L24.6575 16.0241C26.1997 17.1392 28.0635 17.7391 29.9766 17.7363L29.9762 14.0396Z" fill="white"/>                                    
+                        </svg>
+                    </a>
+
+                    <a href="https://t.me/agrousadba_buzukina" class="svg-container">
+                        <svg class="svg-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="black"/>
+                            <path d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z" fill="white"/>
+                        </svg>
+                    </a>    
+                </div>
+            </div>
+
+            <div class="feedback_form_conteiner">
+                <h3>Остались вопросы?</h3>
+                <p>Закажите бесплатный звонок и мы обязательно с вами свяжемся</p>
+
+                <div class="form-container">
+                    <form action="{% url 'send_telegram_message' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Введите своё имя" maxlength="20" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" maxlength="20" pattern="\d*" title="Номер телефона может содержать только цифры" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Введите адрес эл.почты" maxlength="20" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" id="comment" name="comment" placeholder="Добавьте комментарий" maxlength="100" required>
+                        </div>
+                    
+                        <button type="submit">Заказать</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slogan">
+        <h3>Будем рады Вас видеть!</h3>
+    </section>
+
+    <footer class="footer">
+        <h4>© Агроусадьба "БузукИнА"</h4>
+        <a href="#">ссылка на разработчика сайта</a>
+    </footer>
+
+    <script src="{% static 'main/js/form.js' %}"></script>  
+    <script src="{% static 'main/js/slider.js' %}"></script>  
+
+</main>
+
+{% endblock main %}
+
+
+
+

@@ -1,0 +1,132 @@
+.feedback_form_conteiner {
+  width: 540px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.69);
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.feedback_form_conteiner h3 {
+  color: #000;
+  font-family: "Sansita", sans-serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.feedback_form_conteiner p {
+  color: #154108;
+  font-family: "Sansita", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-top: 25px;
+}
+
+.form-container {
+  margin-top: 35px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-container input {
+  width: 500px;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  font-size: 178px;
+  outline: none;
+  color: #000;
+  font-family: "Sansita", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.form-container input:focus {
+  border-bottom: 2px solid #000;
+}
+
+.form-container input::-moz-placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.form-container input::placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 190px;
+  height: 45px;
+  background-color: #000000;
+  margin-top: 50px;
+  color: #fff;
+  padding: 10px;
+  transition: all 0.5s ease;
+  color: #FFF;
+  text-align: center;
+  font-family: "Sansita", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-container button:hover {
+  background-color: #35910E;
+}
+
+@media screen and (max-width: 768px) {
+  .feedback_form_conteiner {
+    width: 330px;
+    height: 540px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+  }
+  .feedback_form_conteiner h3 {
+    font-size: 22px;
+  }
+  .feedback_form_conteiner p {
+    font-size: 14px;
+  }
+  .form-container {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .form-container input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+  }
+  .form-container input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .form-container input::placeholder {
+    font-size: 14px;
+  }
+}/**/

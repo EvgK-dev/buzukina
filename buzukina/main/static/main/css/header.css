@@ -1,0 +1,85 @@
+.header {
+  width: 100%;
+  max-width: 1420px;
+  height: 70px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: #FFF;
+  position: fixed;
+  z-index: 1;
+  transition: transform 0.5s linear;
+}
+
+.header.hide {
+  transform: translateY(-70px);
+}
+
+.header_logotip {
+  width: 145px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: black;
+}
+.header_logotip p {
+  color: #000;
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px; /* 158.025% */
+  transition: all 0.3s ease;
+}
+.header_logotip p:hover {
+  text-decoration: underline;
+  color: #4CC151;
+}
+
+.header__tel {
+  color: #000;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 22px;
+  transition: all 0.3s ease;
+}
+.header__tel:hover {
+  text-decoration: underline;
+  color: #4CC151;
+}
+
+.header__list {
+  width: 700px;
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  color: #687864;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 27px; /* 135% */
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+}
+.header__link:hover {
+  text-decoration: underline;
+  color: #4CC151;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__phone {
+  display: none;
+}/**/

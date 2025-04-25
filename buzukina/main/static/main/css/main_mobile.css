@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/*   */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    min-height: 100%;
+  }
+  .main {
+    width: 100%;
+    max-width: 768px;
+    margin: 80px 10px 0 10px;
+  }
+  .about_us {
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main_information {
+    width: 100%;
+    max-width: 768px;
+    height: 580px;
+    padding: 5px;
+  }
+  .main_information h1 {
+    margin-top: -25px;
+    text-shadow: 0px 2px 5px #687864;
+  }
+  .main_information .main_services {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main_services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main__tel {
+    font-size: 30px;
+  }
+  .main_social_networks {
+    margin-bottom: 10px;
+  }
+  .main_img {
+    width: 100%;
+    max-width: 768px;
+    max-height: 300px;
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .main_img img {
+    max-width: 330px;
+    max-height: 330px;
+  }
+
+  .services_list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+  }
+  .services_list_block {
+    flex-basis: calc(33.333% - 10px); /*  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services_list_block img {
+    width: 90px;
+  }
+  .slogan {
+    padding: 20px;
+  }
+  .house_rules {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  .list_of_rules {
+    margin-top: 20px;
+    gap: 8px 8px;
+  }
+  .rule_block {
+    display: flex;
+    align-items: center;
+  }
+  .rule_icon {
+    width: 40px;
+  }
+  .rule {
+    line-height: 16px; /* 128.571% */
+  }
+  .contract {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contract a {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  .contract a:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .amenities div img {
+    margin-left: 10px;
+    width: 30px;
+  }
+  .houses {
+    padding: 0 20px;
+  }
+  .house_conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .house_conteiner + .house_conteiner {
+    margin-top: 20px;
+  }
+  .house_title {
+    width: 100%;
+    max-width: 768px;
+  }
+  .house_title h2 {
+    font-size: 26px;
+  }
+  .house_description {
+    width: 100%;
+  }
+  .house_description h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .house_parameters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .one_parameter_conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3px 0;
+  }
+  .one_parameter_conteiner:nth-child(odd) {
+    background: rgb(243, 243, 243);
+  }
+  .parameter_title {
+    color: #154108;
+    font-family: "Sansita", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+  }
+  .parameter {
+    color: #000;
+    font-family: "Sansita", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .dop_parameter {
+    font-size: 14px;
+  }
+  .house_cost {
+    width: 100%;
+  }
+  .house_cost h3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .house_capacity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .house_capacity_parameters {
+    font-size: 16px;
+  }
+  .human_capacity {
+    font-size: 16px;
+  }
+  .weekday_and_price {
+    width: 100%;
+    align-items: center;
+  }
+  .weekday {
+    font-size: 14px;
+  }
+  .price {
+    margin-left: 5px;
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  .more_foto {
+    margin: 10px;
+    color: #687864;
+    text-align: center;
+    font-family: "Sansita", sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px; /* 120% */
+    letter-spacing: 1.5px;
+    text-decoration-line: underline;
+    transition: all 0.5s ease;
+  }
+  .more_foto:hover {
+    color: #000000;
+  }
+  .more_foto:active {
+    color: blue;
+  }
+  .addition_services {
+    grid-template-columns: repeat(auto-fill, 340px);
+    gap: 8px 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .addition_service {
+    margin-top: 10px;
+  }
+  .reviews {
+    gap: 10px;
+    padding: 10px;
+  }
+  .review_conteiner {
+    height: auto;
+    margin-top: 10px;
+  }
+  .review_main {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    flex-direction: column;
+  }
+  .review_person {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+  }
+  .review_text {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .review_block_link {
+    flex-direction: column;
+  }
+  .review_link {
+    font-size: 12px;
+  }
+  .feedback {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+    background-color: #687864;
+  }
+  .feedback img {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .feedback_conteiner {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer h4 {
+    color: #000;
+  }
+  .footer a {
+    margin-top: 20px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+  }
+}/**/

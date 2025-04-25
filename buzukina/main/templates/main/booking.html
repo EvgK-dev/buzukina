@@ -1,0 +1,145 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<main class="main" id="main">
+
+    <div class="booking_page_block">
+        <h2 class="booking_page_title">Бронирование агроусадьбы Buzukina.by</h2>
+        <ul class="booking_page_list">
+            <li class="booking_page_list_title">ВНИМАНИЕ!</li>
+            <li>*Бронь возможна по предоплате в сумме не менее 50%.</li>
+            <li>*При отмене бронирования до 7 дней, предоплата НЕ ВОЗВРАЩАЕТСЯ. </li>
+            <li>*Производя оплату - Вы соглашаетесь с указанными условиями. </li>
+            
+        </ul>
+        <ul class="booking_page_list">
+            <li class="booking_page_list_title">СПОСОБЫ ВНЕСЕНИЯ ПРЕДОПЛАТЫ:.</li>
+            <li> 1. Воспользоваться онлайн-сервисом <a target="_blank" href="https://tiny.by/link/864274595" class="booking_page_button">"epos.hutkigrosh.by"</a></li>
+            <li> 2. Пополнить счет через ЕРИП: Банковские и финансовые услуги -> <span class="no_wrap">Банки, НКФО </span> -> <span class="no_wrap">Альфа-Банк</span> -> пополнение счета -> 
+                <button onclick="copyToClipboard()" class="booking_erip"> BY50ALFA301430HVBP0010270000</button> </li>
+            
+            <li> 3. В ином случае - свяжитесь с нами по указанным на сайте контактам. </li>
+        </ul>
+
+    </div>
+    
+
+    
+    <section class="calendars">
+        {% for house in houses %}
+        <div class="calendar_conteiner" id="conteiner_{{ house.id }}">
+            <h2>{{ house.name }}</h2>
+            <div class="slider_booking">
+                <div id="slider-container">
+                    {% if house.photos %}
+                    <div class="slider" id="slider">
+                        {% for photo in house.photos.all %}
+                            <div class="slide"><img src="{{ photo.photo.url }}" alt="{{ house.name }}"></div>
+                        {% endfor %}
+                    </div>
+                  
+                    <div class="pagination" id="pagination"></div>
+                    {% endif %}
+                </div>
+
+            </div>
+            
+
+            <ul class="reserved_dates_{{ house.id }} none">
+                {% for reserved_date in reserved_dates %}
+                  {% if reserved_date.house == house %}
+                    <li>
+                      {{ reserved_date.date|date:"Y-m-d" }}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+            </ul>
+    
+              <div class="calendar" id="calendar_{{ house.id }}">
+                <!-- -->
+              </div>
+    
+              <div class="explanation">
+                  <div class="explanation_free_date">
+                      <div class=""></div>
+                      <span>- дата свободна</span>
+                  </div>
+                  <span class="explanation_text">кликните на дату </span>
+              </div>
+              
+              <form class="booking-form none" action="{% url 'submit_booking' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="none">
+                    <input  type="text" id="house_id_{{ house.id }}" name="house_id_{{ house.id }}" value="{{ house.id }}" required><br>
+                    <input  type="text" id="house_name_{{ house.name }}" name="house_name_{{ house.id }}" value="{{ house.name }}" required><br>
+                </div>
+              
+                  <div class="date_conteiner">
+                      <div class="">
+                          <label for="checkInDate_{{ house.id }}">Дата заезда:</label>
+                          <input type="date" id="checkInDate_{{ house.id }}" name="checkInDate_{{ house.id }}" required><br>
+                      </div>
+                      
+                      <div class="">
+                          <label for="checkOutDate_{{ house.id }}">Дата выезда:</label>
+                          <input type="date" id="checkOutDate_{{ house.id }}" name="checkOutDate_{{ house.id }}" required><br>
+                      </div>
+    
+                      <button type="button" class="clear_button" id="clearSelection_{{ house.id }}">
+                          <div class="closeModal"></div>
+                      </button>
+                  </div>
+    
+                  <div class="booking_info_conteiner">
+                      <div class="booking_info_block">
+                          <label for="selectedDays_{{ house.id }}">Выбрано дней:</label>
+                          <input class="booking_info_selectedDays" type="text" id="selectedDays_{{ house.id }}" name="selectedDays_{{ house.id }}" data-weekday-price="{{ house.weekday_price }}"  readonly><br>
+                      </div>
+                      
+                      <div class="booking_info_block">
+                          <label for="prepayment_{{ house.id }}">Предоплата:</label>
+                          <input class="booking_info_prepayment" type="text" id="prepayment_{{ house.id }}" name="prepayment_{{ house.id }}"  readonly><br>
+                      </div>
+                  </div>
+    
+                  <label for="fileAttachment">Прикрепить файл (если есть чек на оплату):</label>
+                  <input type="file" id="fileAttachment" name="fileAttachment"><br>
+    
+                  <label for="userName_{{ house.id }}">Введите свое имя:</label>
+                  <input type="text" id="userName_{{ house.id }}" name="userName_{{ house.id }}" required><br>
+    
+                  <label for="phoneNumber_{{ house.id }}">Введите номер телефона:</label>
+                  <input type="tel" id="phoneNumber_{{ house.id }}" name="phoneNumber_{{ house.id }}" required><br>
+    
+                  <label for="comment_{{ house.id }}">Комментарий:</label>
+                  <textarea id="comment_{{ house.id }}" name="comment_{{ house.id }}" rows="4" cols="50"></textarea><br>
+    
+                  <input type="submit" value="Забронировать">
+              </form>
+          </div>
+          {% endfor %}
+
+    </section>
+
+
+    <footer class="footer">
+        <h4>© Агроусадьба "БузукИнА"</h4>
+        <a href="#">ссылка на разработчика сайта</a>
+    </footer>
+
+    
+
+    <script src="{% static 'main/js/booking.js' %}"></script>   
+    <script src="{% static 'main/js/slider.js' %}"></script>  
+
+
+    
+</main>
+
+{% endblock main %}
+
+
+
+
